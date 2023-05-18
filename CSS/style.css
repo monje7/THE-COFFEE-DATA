@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dashboard{
+    display: inline-block;
+    background-color: rgba(48, 31, 31, 0.308);
+}
+
+.item{
+    color: whitesmoke;
+}
+
+
