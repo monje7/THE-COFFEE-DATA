@@ -11,6 +11,12 @@
 <body>
     <div class="formulario">
         <div class="contenido">
+            <div class="modal-alert alert-hidden" id="modalAlert">
+                <i class="fa-solid fa-circle-xmark" id="closed"></i>
+                <div class="box-alert"> 
+                    <input type="button" class="btn-aceptar" id="" value="Aceptar">
+                </div>
+            </div>
             <h1>Formulario registro</h1>
             <!-- <label>Ingrese su nombre</label> -->
             <input type="text" placeholder="Ingrese su nombre">
@@ -28,9 +34,11 @@
             <!-- <label>Ingrese su numero de documento</label> -->
             <input type="tel" placeholder="Ingrese su numero telefonico">
             <div class="cont-send">
-                <div class="send">Enviar</div>
+                <input class="send" type="button" id="btnEnviar" value="Enviar">
+                <!-- <div class="send" id="btnEnviar">Enviar</div> -->
             </div>
         </div>
     </div>
+    <script src="js/resgistrodaniel.js"></script>
 </body>
 </html>
