@@ -8,68 +8,114 @@
     <link rel="stylesheet" href="CSS/registrobrayan.css" />
   </head>
   <body>
+    <div class="modal-alert alert-hidden" id="modalAlert">
+      <i class="fa-solid fa-circle-xmark" id="closed"></i>
+      <div class="box-alert"> 
+          <h2 class="mensajeexi">¡Registro con exito!</h2>
+          <div class="check"><img src="img/check.png" width="150"></div>
+          <input type="button" class="btn-aceptarext" id="btnAceptar" value="Aceptar">
+      </div>
+  </div>
+  <div class="modal-alert-2 alert-hidden2" id="modalAlert2">
+      <i class="fa-solid fa-circle-xmark" id="closed2"></i>
+      <div class="box-alert"> 
+          <h2 class="mensaje">Debe ingresar los campos vacios</h2>
+          <div class="notcheck"><img src="img/notcheck.png" width="150"></div>
+          <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
+      </div>
+  </div>
 <div class="container">
 <h1 class="form-title">Registro</h1>
 <form action="#">
 <div class="main-user-info">
 <div class="user-input-box">
-  <label for="fullName">Nombre completo</label>
+  <label for="nombre">Nombre</label>
     <input type="text"
-             id="fullName"
-               name="fullName"
-                 placeholder="Inserte Nombre Completo"/>
+            id="nombre"
+            name="nombre"
+            placeholder="Inserte Nombre"/>
+
 </div>
 <div class="user-input-box">
-  <label for="username">Nombre de usuario</label>
-    <input type="text"
-             id="username"
-               name="username"
-                 placeholder="Inserte Nombre Usuario"/>
+<label for="fullName">Apellidos</label>
+<input type="text"
+        id="apelli"
+        name="apelli"
+        placeholder="Inserte Apellidos"/>
+
 </div>
 <div class="user-input-box">
   <label for="email">Correo</label>
     <input type="email"
-             id="email"
-               name="email"
-                 placeholder="Inserte Correo"/>
+            id="email"
+            name="email"
+            placeholder="Inserte Correo"/>
+
+</div>
+<div class="user-input-box">
+  <label for="phoneNumber">N° Documento</label>
+    <input type="number"
+           id="document"
+           name="document"
+           placeholder="Inserte N° Documento"/>
+
 </div>
 <div class="user-input-box">
   <label for="phoneNumber">Telefono</label>
     <input type="text"
-             id="phoneNumber"
-               name="phoneNumber"
-                 placeholder="Inserte Telefono"/>
+           id="phoneNumber"
+           name="phoneNumber"
+           placeholder="Inserte Telefono"/>
+
 </div>
 <div class="user-input-box">
   <label for="password">Contraseña</label>
     <input type="password"
-             id="password"
-               name="password"
-                 placeholder="Inserte Contraseña"/>
+            id="password"
+            name="password"
+            placeholder="Inserte Contraseña"/>
+
 </div>
 <div class="user-input-box">
-  <label for="confirmPassword">Confirmar Contraseña</label>
-    <input type="password"
-             id="confirmPassword"
-                 name="confirmPassword"
-                   placeholder="Confirme Contraseña"/>
+  <label for="produccion">Lugar de produccion</label>
+    <input type="text"
+            id="produccion"
+            name="produccion"
+            placeholder="Inserte Contraseña"/>
+
 </div>
+<div class="user-input-box">
+<form>
+  <label for="opciones">Tipos de Cafe</label>
+  <select class="tiposc" id="opciones" name="opciones" required>
+    <option value="">ㅤㅤㅤㅤㅤSelecciona una opciónㅤㅤㅤㅤㅤㅤ</option>
+    <option value="opcion1">Bourbon Rosado</option>
+    <option value="opcion2">Typica</option>
+    <option value="opcion3">Geisha</option>
+    <option value="opcion4">Comun</option>
+    <option value="opcion4">Caturro</option>
+  </select>
+</form>
 </div>
+
 <div class="gender-details-box">
-      <span class="gender-title">Genero</span>
-<div class="gender-category">
-    <input type="radio" name="gender" id="male">
-  <label for="male">Hombre</label>
-    <input type="radio" name="gender" id="female">
-  <label for="female">Mujer</label>
-    <input type="radio" name="gender" id="other">
-  <label for="other">Otro..</label>
+  <span class="gender-title">Tipo de Usuario</span>
+<div id="tipo" class="gender-category">
+<input type="radio" name="gender" id="">
+<label for="male">Cafetero</label>
+<input type="radio" name="gender" id="">
+<label for="female">Aprendiz</label>
+<input type="radio" name="gender" id="">
+<label for="other">Instructor</label>
+</div>
 </div>
 </div>
 <div class="form-submit-btn">
-      <a class="epa" href="iniciosesionbrayan.html"> Registrarse</a>
+      <a type="button" id="enviar" class="epa"> Registrarse</a>
+      <a type="button" id="asd" class="ipa" href="iniciosesionbrayan.html">Volver</a>
 </div>
 </form>
 </div>
+<script src="js/registrobrayan.js"></script>
 </body>
 </html>
