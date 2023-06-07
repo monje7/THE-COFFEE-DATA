@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/resgistrodaniel.css"> 
+    <link rel="stylesheet" href="icon/fontawesome-free-6.4.0-web/css/all.css">
     <!-- cambio -->
 </head>
 <body>
+    <div class="modal-alert alert-hidden" id="modalAlert">
+        <i class="fa-solid fa-circle-xmark" id="closed"></i>
+        <div class="box-alert"> 
+            <h2 class="mensaje">Has sido registrado con exito</h2>
+            <input type="button" class="btn-aceptar" id="btnAceptar" value="Aceptar">
+        </div>
+    </div>
+    <div class="modal-alert-2 alert-hidden2" id="modalAlert2">
+        <i class="fa-solid fa-circle-xmark" id="closed2"></i>
+        <div class="box-alert"> 
+            <h2 class="mensaje">Debe llenar todos los campos</h2>
+            <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
+        </div>
+    </div>
     <div class="formulario">
         <div class="contenido">
-            <div class="modal-alert alert-hidden" id="modalAlert">
-                <i class="fa-solid fa-circle-xmark" id="closed"></i>
-                <div class="box-alert"> 
-                    <input type="button" class="btn-aceptar" id="" value="Aceptar">
-                </div>
-            </div>
             <h1>Formulario registro</h1>
             <!-- <label>Ingrese su nombre</label> -->
-            <input type="text" placeholder="Ingrese su nombre">
+            <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre">
             <!-- <label>Ingrese  sus apellidos</label> -->
             <input type="text" placeholder="Ingrese sus apellidos">
             <!-- <label>Tipo de docuemnto</label> -->

@@ -18,30 +18,48 @@ body {
     justify-content: center;
     align-items: center;
 }
+.modal-alert-2{
+    position: fixed;
+    background-color: rgba(0, 0, 1, 0.499);
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-hidden2{
+    visibility: hidden;
+}
 .alert-hidden {
     visibility: hidden;
 }
 .box-alert {
+    position: relative;
     width: 400px;
     height: 300px;
     background-color: whitesmoke;
     border-radius: 10px;
 }
+.mensaje{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
 .fa-circle-xmark {
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.8em;
     left: 430px;
     bottom: 155px;
     color: red;  
 
 }
 .btn-aceptar {
-    position: relative;
+    position: absolute;
     text-align: center;
     font-weight: 800;
     /* left: 260px; */
-    top: 210px;
-    left: 150px;
+    top: 180px;
+    left: 140px;
     width: 120px;
     height: 70px;
     border-radius: 10px;
@@ -67,6 +85,7 @@ h1{
 input {
     font-size: 20px;
     margin-top: 28px;
+    padding-left: 5px;
     color: white;
     border: 4.5px solid rgb(32, 52, 90);
     border-radius: 10px;
