@@ -1,3 +1,8 @@
+window.addEventListener("load", function(){
+  document.getElementById("viewAlerta").addEventListener("click", function(){
+    alert("Registro Exitoso!");
+  });
+});
 const sidebar = document.querySelector(".sidebar");
 const sidebarClose = document.querySelector("#sidebar-close");
 const menu = document.querySelector(".menu-content");
@@ -20,3 +25,4 @@ subMenuTitles.forEach((title) => {
     menu.classList.remove("submenu-active");
   });
 });
+
