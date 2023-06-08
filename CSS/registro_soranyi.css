@@ -50,11 +50,13 @@ input[type="password"] {
     width: 82%;
     padding: 10px;
     border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
 }
 
 .input-contenedor {
     margin-bottom: 15px;
-    border: 1px solid #aaa;
+    
 }
 
 .icon {
@@ -222,4 +224,96 @@ p {
     color: black;
     font: 1.2em;
     cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', sans-serif;
+}
+
+.modal-alert-visible {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-alert-hidden {
+    display: none;
+
+}
+
+.box-alert {
+    width: 400px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+
+.modal-aceptar {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+
+.form {
+    margin-top: 40px;
+    margin-left: 40px;
+    border: 1px solid rgb(64, 64, 64,.8);
+    padding: 50px;
+    width: 300px;
+}
+.txt-nombre{
+    margin-top: 20px;
+}
+
+.txt-alert-visible{
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.txt-alert-hidden{
+    visibility: hidden;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.txt-alert1-hidden{
+    visibility: hidden;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.txt-alert2-hidden{
+    visibility: hidden;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.btn-enviar {
+    margin-top: 20px;
+    width: 120px;
+    height: 70px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
 }

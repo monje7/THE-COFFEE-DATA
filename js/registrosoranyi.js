@@ -63,3 +63,68 @@ btnAceptar2.addEventListener("click", function(){
     modalAlert.classList.add("alert-hidden")
 })
 
+
+// nombre
+
+
+let txtNombre = document.getElementById("txtNombre");
+let txtAlert = document.getElementById("txtAlert");
+let txtAlert1 = document.getElementById("txtAlert1");
+let txtAlert2 = document.getElementById("txtAlert2");
+
+
+viewAlerta.addEventListener("click", function(){
+    if (txtNombre.value.length ===0) {
+        txtAlert.classList.add("txt-alert-visible");
+        txtAlert.classList.remove("txt-alert-hidden");
+
+    }
+    else {
+        txtAlert.classList.remove("txt-alert-visible");
+        txtAlert.classList.add("txt-alert-hidden");
+    }
+});
+
+btnAceptar.addEventListener("click", function(){
+    modalAlert.classList.remove("modal-alert-visible");
+    modalAlert.classList.add("modal-alert-hidden");
+});
+
+// correo
+
+viewAlerta.addEventListener("click", function(){
+    if (txtNombre.value.length ===0) {
+        txtAlert1.classList.add("txt-alert-visible");
+        txtAlert1.classList.remove("txt-alert1-hidden");
+
+    }
+    else {
+        txtAlert1.classList.remove("txt-alert-visible");
+        txtAlert1.classList.add("txt-alert1-hidden");
+    }
+});
+
+btnAceptar.addEventListener("click", function(){
+    modalAlert.classList.remove("modal-alert-visible");
+    modalAlert.classList.add("modal-alert-hidden");
+});
+
+
+
+viewAlerta.addEventListener("click", function(){
+    if (txtNombre.value.length ===0) {
+        txtAlert2.classList.add("txt-alert-visible");
+        txtAlert2.classList.remove("txt-alert2-hidden");
+
+    }
+    else {
+        txtAlert2.classList.remove("txt-alert-visible");
+        txtAlert2.classList.add("txt-alert2-hidden");
+    }
+});
+
+btnAceptar.addEventListener("click", function(){
+    modalAlert.classList.remove("modal-alert-visible");
+    modalAlert.classList.add("modal-alert-hidden");
+});
+
