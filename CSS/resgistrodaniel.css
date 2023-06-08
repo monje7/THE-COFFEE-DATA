@@ -7,6 +7,13 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    
+}
+.fondo-color {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
     background-image: linear-gradient(to bottom,rgb(59, 115, 158),rgb(134, 179, 145)); 
 }
 .modal-alert {
