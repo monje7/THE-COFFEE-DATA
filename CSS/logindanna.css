@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: cover;
+}
+.form-login{
+    width: 340px;
+    height: 340px;
+    margin: auto;
+    margin-top: 180px;
+    padding: 20px 40px;
+    color: transparent;
+    box-shadow: 16px 6px 30px gray;
+    backdrop-filter: blur(5px);
+}
+h5{
+    font-size: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor:context-menu;
+    color: black;
+    letter-spacing: 0.2em;
+}
+.user{
+    width: 90%;
+    border:none;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom:2px solid black ; 
+}
+.pass{
+    width: 90%;
+    border:none;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom:2px solid black ;
+}
+.button{
+    width: 40%;
+    height: 45px;
+    background:black;
+    border-radius: 13px;
+    color: white;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding:15px;
+    transition: all 3s;
+    margin-left:100px;
+}.form-login p{
+    height: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+.form-login a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-login a:hover{
+    text-decoration: underline;
+}

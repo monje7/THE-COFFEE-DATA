@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     height: 100vh;
     width: 100%;
@@ -16,7 +15,7 @@ h1{
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
 }
-nav {
+.menu-horizontal{
     background-color:  rgb(33, 102, 12);
     position: fixed;
     top: 0;
@@ -32,14 +31,13 @@ nav {
     color: transparent;
     text-align: left;
     display: none;
-    background-color:rgb(33, 102, 12);
-    
+    background-color:rgb(33, 102, 12);    
 }
 ul {  
     padding: 10px; 
     border: 1px solid transparent;
     list-style: none;
-    border-radius: 5px  ;
+    border-radius: 5px;
 }
 ul:hover {
     color: transparent   
@@ -48,37 +46,47 @@ a {
     text-decoration: none;  
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
-    color: white    ;
+    color: white;
 }
 i{
     margin-right: 23px;
     color:white;
 }
-
 .sub-menu{
     position: relative;
-    
     width: 200px;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-
 }
 nav ul li:hover .sub{
     display: block;
     width: fit-content;
     text-align: left;
 }
-.principal
-{
-    margin-left: 23px;
-    
+.principal{
+    margin-left: 23px;    
+    padding: 5px;
 }
+.menu-vertical{
+    background-color:transparent;
 
-
-
-
-
-
-
+}
+.first{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 1.5em;
+}
+.cont{
+    margin-top:12px ;
+    width: 23px;
+    height: 23px;
+    margin-bottom: 150px;
+}
+.img-logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+}
 
 
