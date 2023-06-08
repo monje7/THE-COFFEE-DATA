@@ -14,9 +14,10 @@ btnRegistrar.addEventListener("click", function () {
     if (txtNombre.value.length === 0) {
         btnRegistrar.addEventListener("click",function(){
             hiddenAlert.classList.add("div-alert")
+            hiddenAlert.style.visibility = "visible";
+            hiddenAlert.style.opacity = "1";
            });
-        hiddenAlert.style.visibility = "visible";
-        hiddenAlert.style.opacity = "1";
+       
     }
     else if (txtApellidos.value.length === 0) {
        btnRegistrar.addEventListener("click",function(){

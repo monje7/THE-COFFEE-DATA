@@ -13,6 +13,10 @@ btnRegistrar.addEventListener("click", function(){
         alert("El nombre del usuario, campo obligatorio")
         hiddenBreack.style.visibility = "visible";
         hiddenBreack.style.opacity = "1";
+        btnAceptar.addEventListener("click", function(){
+            hiddenBr.style.visibility = "hidden";
+            hiddenBreack.style.opacity= "0";
+        });   
         
     }
     else if(txtApellidos.value.length === 0){
@@ -44,4 +48,4 @@ btnRegistrar.addEventListener("click", function(){
 btnMistake.addEventListener("click", function(){
     hiddenBreack.style.visibility = "hidden";
     hiddenBreack.style.opacity= "0";
-})
+});
