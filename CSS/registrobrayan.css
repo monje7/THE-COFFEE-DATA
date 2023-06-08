@@ -17,11 +17,10 @@ body{
 
 .container{
     width: 100%;
-    max-width: 650px;
-    background: rgba(2, 2, 2, 0.5);
-    padding: 28px;
-    margin: 0 28px;
-    border-radius: 10px;    
+    max-width: 750px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 90px;
+    border-radius: 10px;   
 }
 
 .form-title{
@@ -48,8 +47,8 @@ body{
 .user-input-box{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    padding-bottom: 15px;
+    width: 45%;
+    padding-bottom: 20px;
 }
 
 .user-input-box label{
@@ -213,16 +212,16 @@ body{
     cursor: pointer;
 }
 .check{
-    width: 150px;
+    width: 120px;
     height: 150px;
-    margin-left: 125px;
-    margin-top: 70px;
+    margin-left: 140px;
+    margin-top: 89px;
 }
 .notcheck{
-    width: 150px;
+    width: 120px;
     height: 150px;
-    margin-left: 125px;
-    margin-top: 70px;
+    margin-left: 140px;
+    margin-top: 89px;
 }
 
 @media(max-width: 600px){

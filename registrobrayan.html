@@ -12,7 +12,7 @@
       <i class="fa-solid fa-circle-xmark" id="closed"></i>
       <div class="box-alert"> 
           <h2 class="mensajeexi">¡Registro con exito!</h2>
-          <div class="check"><img src="img/check.png" width="150"></div>
+          <div class="check"><img src="img/check.png" width="120"></div>
           <input type="button" class="btn-aceptarext" id="btnAceptar" value="Aceptar">
       </div>
   </div>
@@ -20,7 +20,7 @@
       <i class="fa-solid fa-circle-xmark" id="closed2"></i>
       <div class="box-alert"> 
           <h2 class="mensaje">Debe ingresar los campos vacios</h2>
-          <div class="notcheck"><img src="img/notcheck.png" width="150"></div>
+          <div class="notcheck"><img src="img/notcheck.png" width="120"></div>
           <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
       </div>
   </div>
@@ -29,11 +29,12 @@
 <form action="#">
 <div class="main-user-info">
 <div class="user-input-box">
+
   <label for="nombre">Nombre</label>
     <input type="text"
             id="nombre"
-            name="nombre"
-            placeholder="Inserte Nombre"/>
+            name="nombre" 
+            placeholder="Inserte Nombre" required/>
 
 </div>
 <div class="user-input-box">
@@ -41,7 +42,7 @@
 <input type="text"
         id="apelli"
         name="apelli"
-        placeholder="Inserte Apellidos"/>
+        placeholder="Inserte Apellidos" required/>
 
 </div>
 <div class="user-input-box">
@@ -49,7 +50,7 @@
     <input type="email"
             id="email"
             name="email"
-            placeholder="Inserte Correo"/>
+            placeholder="Inserte Correo" required/>
 
 </div>
 <div class="user-input-box">
@@ -62,7 +63,7 @@
 </div>
 <div class="user-input-box">
   <label for="phoneNumber">Telefono</label>
-    <input type="text"
+    <input type="tel"
            id="phoneNumber"
            name="phoneNumber"
            placeholder="Inserte Telefono"/>
@@ -88,7 +89,7 @@
 <form>
   <label for="opciones">Tipos de Cafe</label>
   <select class="tiposc" id="opciones" name="opciones" required>
-    <option value="">ㅤㅤㅤㅤㅤSelecciona una opciónㅤㅤㅤㅤㅤㅤ</option>
+    <option value="">ㅤㅤㅤSelecciona una opciónㅤㅤㅤ</option>
     <option value="opcion1">Bourbon Rosado</option>
     <option value="opcion2">Typica</option>
     <option value="opcion3">Geisha</option>
@@ -111,7 +112,7 @@
 </div>
 </div>
 <div class="form-submit-btn">
-      <a type="button" id="enviar" class="epa"> Registrarse</a>
+      <a type="button" id="enviar" class="epa" href="#"> Registrarse</a>
       <a type="button" id="asd" class="ipa" href="iniciosesionbrayan.html">Volver</a>
 </div>
 </form>
