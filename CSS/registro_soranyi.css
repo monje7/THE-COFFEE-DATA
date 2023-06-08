@@ -1,74 +1,99 @@
 body {
-    
+
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: linear-gradient(#2e211f, rgb(139, 134, 134)); 
+    background: linear-gradient(#2e211f, rgb(139, 134, 134));
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
 
-    
+
 }
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
 }
-.contenedor{
+
+
+
+
+.contenedor {
     width: 100%;
     padding: 15px;
 }
-.formulario{
+
+.formulario {
     background: #fff;
     margin-top: 150px;
     padding: 3px;
-    
+
 }
-h1{
+
+h1 {
     text-align: center;
     color: #000000;
     font-size: 40px;
 }
+
 input[type="text"],
-input[type="password"]{
+input[type="password"] {
     font-size: 20px;
     width: 82%;
     padding: 10px;
     border: none;
 }
-.input-contenedor{
+
+.input-contenedor {
     margin-bottom: 15px;
     border: 1px solid #aaa;
 }
-.icon{
+
+.icon {
     min-width: 50px;
     text-align: center;
     color: #999;
 }
-.button{
+
+.button {
     border: none;
     width: 100%;
     color: white;
     font-size: 20px;
-    background:  #1a2537;
+    background: #1a2537;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
     background: rgb(94, 94, 94);
 }
-p{
+
+p {
     text-align: center;
 }
-.link{
+
+.link {
     text-decoration: none;
-      color: #1a2537;
+    color: #1a2537;
     font-weight: 600;
 }
-.link:hover{
-     color: cadetblue;
+
+.link:hover {
+    color: cadetblue;
 }
-@media(min-width:768px)
-{
-    .formulario{
+
+@media(min-width:768px) {
+    .formulario {
         margin: auto;
         width: 500px;
         margin-top: 150px;
@@ -80,29 +105,121 @@ p{
 
 
 
+.alert-hidden2 {
+    visibility: hidden;
+}
 
+.alert-hidden {
+    visibility: hidden;
+}
 
+.box-alert {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
 
+.modal-alert {
+    position: fixed;
+    background-color: rgba(0, 0, 1, 0.499);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.modal-alert-2 {
+    position: fixed;
+    background-color: rgba(0, 0, 1, 0.499);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.check {
+    font-size: 100px;
+    margin-left: 125px;
+    margin-top: 70px;
+    color: rgb(29, 166, 29);
+}
 
+.notcheck {
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    font-size: 5em;
+    color: rgb(168, 0, 0);
+    /* font-size: 100px; */
+    /* margin-left: 125px; */
+    /* margin-top: 100px; */
+    /* color: rgb(119, 19, 19); */
+}
+.contain{
+    display: block;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
 
+.mensaje {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 100%;
+}
 
+.mensajeexi {
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    width: 100%;
+}
 
+.btn-aceptarext {
+    position: absolute;
+    text-align: center;
+    font-weight: 800;
+    top: 235px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: black;
+    font: 1.2em;
+    cursor: pointer;
+}
 
+.icon-close2 {
+    position: relative;
+    font-size: 1.8em;
+    left: 430px;
+    bottom: 155px;
+    color: rgb(219, 189, 66);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn-aceptar {
+    position: absolute;
+    text-align: center;
+    font-weight: 800;
+    top: 235px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    border: none;
+    color: black;
+    font: 1.2em;
+    cursor: pointer;
+}

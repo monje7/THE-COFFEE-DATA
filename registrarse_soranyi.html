@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title></title> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="CSS/registro_soranyi.css">
-	
 
-</head>  
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/registro_soranyi.css">
+
+
+</head>
+
 <body>
- <form class="formulario">
-    
-    <h1>Registrate</h1>
-     <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre Completo">
-         
-         </div>
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" id="viewAlerta" value="Registrate" class="button"  >
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿Ya tienes una cuenta?<a class="link" href="login_soranyi.html">Iniciar Sesion</a></p>
-     </div>
+
+    <div class="modal-alert alert-hidden" id="modalAlert">
+        <i class="fa-solid fa-circle-xmark" id="closed"></i>
+        <div class="box-alert">
+            <div class="contain">
+                <h2 class="mensajeexi">¡Registro con exito!</h2>
+                <i class="notcheck fa-regular fa-circle-check" style="color: green;"></i>
+            </div>
+
+            <input type="button" class="btn-aceptarext" id="btnAceptar" value="Aceptar">
+        </div>
+    </div>
+    <div class="modal-alert-2 alert-hidden2" id="modalAlert2">
+        <i class="" id="closed2"></i>
+        <div class="box-alert">
+            <div class="contain">
+                <h2 class="mensaje">Los Campos Son Obligatorios</h2>
+                <i class="notcheck fa-regular fa-circle-xmark"></i>
+            </div>
+            <!-- <div class="notcheck"><i class="fa-regular fa-circle-x"></i></div> -->
+            <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
+        </div>
+    </div>
+
+    <form class="formulario">
+
+        <h1>Registrate</h1>
+        <div class="contenedor">
+
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Nombre Completo">
+
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Correo Electronico">
+
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+
+            </div>
+            <input type="button" id="viewAlerta" value="Registrate" class="button">
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <p>¿Ya tienes una cuenta?<a class="link" href="login_soranyi.html">Iniciar Sesion</a></p>
+        </div>
     </form>
-    <script src="js/cafe_menu_soranyi.js"></script>
+    <script src="js/registrosoranyi.js"></script>
 </body>
+
 </html>
