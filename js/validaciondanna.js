@@ -9,64 +9,132 @@ let hiddenAlert = document.getElementById("hiddenAlert");
 let hiddenBreack = document.getElementById("hiddenBreack");
 let btnAceptar = document.getElementById("btnAceptar");
 let forms = document.getElementById("forms");
+let term = document.getElementById("term");
+let txtAlert = document.getElementById("txtAlert");
+let txtAlertA = document.getElementById("txtAlertA");
+let txtAlertT = document.getElementById("txtAlertT");
+let txtAlertC = document.getElementById("txtAlertC");
+let txtAlertP = document.getElementById("txtAlertP");
+let txtAlertTYC = document.getElementById("txtAlertTYC");
 
-btnRegistrar.addEventListener("click", function () {
-    if (txtNombre.value.length === 0) {
-        btnRegistrar.addEventListener("click",function(){
-            hiddenAlert.classList.add("div-alert")
-            hiddenAlert.style.visibility = "visible";
-            hiddenAlert.style.opacity = "1";
-           });
-       
+btnRegistrar.addEventListener("click",function(){
+    if (txtNombre.value.length ===0) {
+        txtAlert.classList.add("txt-alert-visible");
+        txtAlert.classList.remove("txt-alert-hidden");
+        
     }
-    else if (txtApellidos.value.length === 0) {
-       btnRegistrar.addEventListener("click",function(){
-        hiddenAlert.classList.add("div-alert")
-       });
-    } else if (txtCorreo.value.length === 0) {
-        btnRegistrar.addEventListener("click",function(){
-            hiddenAlert.classList.add("div-alert")
-           });
-    } else if (typeusuario.value.length === 0) {
-        btnRegistrar.addEventListener("click",function(){
-            hiddenAlert.classList.add("div-alert")
-           });
-    } else if (passwordvalue.length === 0) {
-        btnRegistrar.addEventListener("click",function(){
-        hiddenAlert.classList.add("div-alert")
-       });
+    else{
+        txtAlert.classList.remove("txt-alert-visible");
+        txtAlert.classList.add("txt-alert-hidden");
+
+    }
+     if(txtApellidos.value.length === 0) {
+        txtAlertA.classList.add("txt-alert-visible");
+        txtAlertA.classList.remove("txt-alert-hidden");
+        
+    }
+    else{
+        txtAlertA.classList.remove("txt-alert-visible");
+        txtAlertA.classList.add("txt-alert-hidden");
+        
+    }
+    if(typeusuario.value.length === 0) {
+        txtAlertT.classList.add("txt-alert-visible");
+        txtAlertT.classList.remove("txt-alert-hidden");
+        
+    }
+    else{
+        txtAlertT.classList.remove("txt-alert-visible");
+        txtAlertT.classList.add("txt-alert-hidden");
+        
+    }
+    
+    if(txtCorreo.value.length === 0) {
+        txtAlertC.classList.add("txt-alert-visible");
+        txtAlertC.classList.remove("txt-alert-hidden");
+        
+    }
+    else{
+        txtAlertC.classList.remove("txt-alert-visible");
+        txtAlertC.classList.add("txt-alert-hidden");
+        
+    }
+    if(password.value.length === 0) {
+        txtAlertP.classList.add("txt-alert-visible");
+        txtAlertP.classList.remove("txt-alert-hidden");
+        
+    }
+    else{
+        txtAlertP.classList.remove("txt-alert-visible");
+        txtAlertP.classList.add("txt-alert-hidden");
+        
+    }
+    if(term.value.length === 0) {
+        txtAlertTYC.classList.add("txt-alert-visible");
+        txtAlertTYC.classList.remove("txt-alert-hidden");
+        
+    }
+    else{
+        txtAlertTYC.classList.remove("txt-alert-visible");
+        txtAlertTYC.classList.add("txt-alert-hidden");
+        
+    }
+    
+    
+   
+});
+            // hiddenAlert.classList.add("div-alert")
+            // hiddenAlert.style.visibility = "visible";
+            // hiddenAlert.style.opacity = "1";
+    
+    // else if (txtApellidos.value.length === 0) {
+    //    btnRegistrar.addEventListener("click",function(){
+    //     hiddenAlert.classList.add("div-alert")
+    //    });
+    // } else if (txtCorreo.value.length === 0) {
+    //     btnRegistrar.addEventListener("click",function(){
+    //         hiddenAlert.classList.add("div-alert")
+    //        });
+    // } else if (typeusuario.value.length === 0) {
+    //     btnRegistrar.addEventListener("click",function(){
+    //         hiddenAlert.classList.add("div-alert")
+    //        });
+    // } else if (passwordvalue.length === 0) {
+    //     btnRegistrar.addEventListener("click",function(){
+    //     hiddenAlert.classList.add("div-alert")
+    //    });
  
         
-    } if ((txtNombre.value.length !== 0)&&(txtApellidos.value.length!==0)&&(txtCorreo.value.length !== 0)&&(txtTipoUsuario.value.length !== 0)&&(txtTipoUsuario.value.length !== 0)) {
-        hiddenAlert.style.visibility = "visible";
-        hiddenAlert.style.opacity = "1";
-        btnAceptar.addEventListener("click",function(){
-         forms.submit()
-        })
-     }else if ((nombreUsuario.value.length !== 0)&&(correo.value.length===0)&&(contaseña.value.length !== 0)) {
-       hiddenAlert.style.visibility = "hidden";
-       hiddenAlert.style.opacity = "0.0";
-       btnAceptar.addEventListener("click",function(){
-        forms.submit()
-       })
-    }
-    else {
-        btnRegistrar.addEventListener("click",function(){
-            hiddenBreack.classList.add("div-breack")
-            });
-        btnRegistrar.addEventListener("click",function(){
-            hiddenBreack.classList.add("div-breack")
-            });
-        btnRegistrar.addEventListener("click",function(){
-            hiddenBreack.classList.add("div-breack")
-            });
-    }
-    
+    // } if ((txtNombre.value.length !== 0)&&(txtApellidos.value.length!==0)&&(txtCorreo.value.length !== 0)&&(txtTipoUsuario.value.length !== 0)&&(txtTipoUsuario.value.length !== 0)) {
+    //     // hiddenAlert.style.visibility = "visible";
+    //     // hiddenAlert.style.opacity = "1";
+    //     txtAlert.classList.add("txt-alert-visible");
+    //     txtAlert.classList.remove("txt-alert-hidden");
+    //     btnAceptar.addEventListener("click",function(){
+    //      forms.submit()
+    //     })
+    //  }else if ((nombreUsuario.value.length !== 0)&&(correo.value.length===0)&&(contaseña.value.length !== 0)) {
+    //    hiddenAlert.style.visibility = "hidden";
+    //    hiddenAlert.style.opacity = "0.0";
+    //    btnAceptar.addEventListener("click",function(){
+    //     forms.submit()
+    //    })
+    // }
+    // else {
+    //     btnRegistrar.addEventListener("click",function(){
+    //         hiddenBreack.classList.add("div-breack")
+    //         });
+    //     btnRegistrar.addEventListener("click",function(){
+    //         hiddenBreack.classList.add("div-breack")
+    //         });
+    //     btnRegistrar.addEventListener("click",function(){
+    //         hiddenBreack.classList.add("div-breack")
+    //         });
+    // }
     
 
-});
 
 btnAceptar.addEventListener("click", function () {
     hiddenAlert.style.visibility = "hidden";
-    hiddenAlert.style.opacity = "0";
-})
+  hiddenAlert.style.opacity = "0";
+});
