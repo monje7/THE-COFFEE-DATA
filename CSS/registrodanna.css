@@ -14,7 +14,7 @@
     border-radius: 2px;
     color: white;
     font-size: 1em;
-    background-color: rgb(46, 105, 27);
+    background-color: brown;
     box-shadow: 16px 7px 30px grey;
 }
 .ctr{
@@ -106,13 +106,11 @@ a{
     transition: all 3s;
     width: 120px;
     height: 50px;
-   
-  
+
 }
 .typeus{
-    margin-bottom: 15px;
-    margin-left: 40px;
-    margin-top: 15px;
+ margin-bottom: 20px;
+  width: 100%;
 }
 .messeg{
     position: absolute;
@@ -163,31 +161,38 @@ a{
     transition: all 3s;
     width: 90px;
     height: 40px;
-    margin-bottom: 34px;
-    
+    margin-bottom: 34px;   
 }
 .messeg-2{
     position: absolute;
     top: 0;
     margin-top: 40px;
-
 }
 .btn-alert{
     color:white;
     font-size: 45px;
     margin-top:54px;
     margin-bottom:24px;
-    
 }
 .btn-alert-dos{
     color:white;
     font-size: 45px;
     margin-top:54px;
-    margin-bottom:24px;
-    
+    margin-bottom:24px;  
 }
 .icon-aprendiz{
   float: right;
   font-size: 34px;
 
+}
+.txt-alert-hidden{
+    color: rgb(188, 15, 15);
+    font-weight: 500;
+    visibility: hidden;
+}
+.txt-alert-visible{
+    color:  white;
+    font-weight: 500;
+    position: relative;
+    top: -20px;
 }
