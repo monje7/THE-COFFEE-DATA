@@ -29,9 +29,10 @@
         <div class="contenido">
             <h1>Formulario registro</h1>
             <!-- <label>Ingrese su nombre</label> -->
-            <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre">
-            <!-- <label>Ingrese  sus apellidos</label> -->
-            <input type="text" placeholder="Ingrese sus apellidos">
+            <input ckl type="text" id="nombreUsuario" placeholder="Ingrese su nombre"><br>
+            <label id="txtAlert" class="txt-alert txt-alert-hidden">Ingrese  su nombre</label>
+            <input type="text" id="apellidos" placeholder="Ingrese sus apellidos">
+            <label id="txtAlert" class="txt-alert txt-alert-hidden">Ingrese sus apellidos</label>
             <!-- <label>Tipo de docuemnto</label> -->
             <select>
                 <option value="">Tipo de documento</option>
@@ -44,7 +45,8 @@
             <!-- <label>Ingrese su numero de documento</label> -->
             <input type="tel" placeholder="Ingrese su numero telefonico">
             <div class="cont-send">
-                <input class="send" type="button" id="btnEnviar" value="Enviar">
+
+                <input class="send" type="submit" id="btnEnviar" value="Enviar">
                 <!-- <div class="send" id="btnEnviar">Enviar</div> -->
             </div>
         </div>

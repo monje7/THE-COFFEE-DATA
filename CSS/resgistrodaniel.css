@@ -7,20 +7,20 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+
 }
 .fondo-color {
     position: fixed;
-    height: 100%;
+    height: 100vw;
     width: 100%;
     z-index: -100;
-    background-image: linear-gradient(to bottom,rgb(59, 115, 158),rgb(134, 179, 145)); 
+    background-image: linear-gradient(to bottom,rgb(59, 115, 158),rgb(134, 179, 145));
 }
 .modal-alert {
     position: fixed;
     background-color: rgba(0, 0, 1, 0.499);
     width:100% ;
-    height: 100vh;
+    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ body {
     position: fixed;
     background-color: rgba(0, 0, 1, 0.499);
     width:100% ;
-    height: 100vh;
+    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body {
     font-size: 1.8em;
     left: 430px;
     bottom: 155px;
-    color: red;  
+    color: red;
 
 }
 .btn-aceptar {
@@ -99,6 +99,14 @@ input {
     height: 50px;
     width: 350px;
     background-color: rgb(36, 48, 60);
+}
+.txt-alert{
+    font-size: 1.3em;
+    color: red;
+    font-weight: 400;
+}
+.txt-alert-hidden{
+    visibility: hidden;
 }
 select{
     font-size: 20px;

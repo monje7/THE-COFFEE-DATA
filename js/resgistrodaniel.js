@@ -5,22 +5,35 @@ let btnEnviar2= document.getElementById("btnEnviar2");
 let btnAceptar2= document.getElementById("btnAceptar2")
 let modalAlert = document.getElementById("modalAlert");
 let modalAlert2 = document.getElementById("modalAlert2");
-
+let txtAlert = document.getElementById("txtAlert")
 let closed = document.getElementById("closed");
+
+let apellidos = document.getElementById("apellidos");
+
+
 
 btnEnviar.addEventListener("click",function() {
     if (nombreUsuario.value.length === 0){
         btnEnviar.addEventListener("click",function(){
             modalAlert2.classList.remove("alert-hidden2");
+            
         });
         closed2.addEventListener("click",function(){
-            modalAlert2.classList.add("alert-hidden2")
+            modalAlert2.classList.add("alert-hidden2");
             // alert("Si funciono"); 
         });
         btnAceptar2.addEventListener("click",function(){
-            modalAlert2.classList.add("alert-hidden2")
+            modalAlert2.classList.add("alert-hidden2");
             // alert("Si funciono"); 
         }); 
+        btnEnviar.addEventListener("click",function(){
+            if (nombreUsuario.value.length==0){
+                txtAlert.classList.remove("txt-alert-hidden");
+            }
+            if (apellidos.value.length==0){
+                txtAlert.classList.remove("txt-alert-hidden");
+            }
+        });
         // alert("Si funciono")
 }
 else {
@@ -28,12 +41,13 @@ else {
         modalAlert.classList.remove("alert-hidden");
     });
     closed.addEventListener("click",function(){
-        modalAlert.classList.add("alert-hidden")
+        modalAlert.classList.add("alert-hidden");
         // alert("Si funciono"); 
     });
     btnAceptar.addEventListener("click",function(){
-        modalAlert.classList.add("alert-hidden")
+        modalAlert.classList.add("alert-hidden");
         // alert("Si funciono"); 
     });
 }
 });  
+
