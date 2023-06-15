@@ -39,17 +39,26 @@
     <label id="txtAlertA" class="txt-alert-hidden">Por favor, Ingrese el apellido!</label>
     <br><label class="select" id="selectType" for="">Tipo de identificacion</label>
     <br><select class="typeus" name="TipoUsuario" id="typeusuario">
-      <option value="">Aprendiz</option>
-      <option value="">Administrador</option>
-      <option value="">Cliente</option>
+      <option value=""></option>
+      <option value="1" class="op">Aprendiz</option>
+      <option value="2" class="op">Administrador</option>
+      <option value="3" class="op">Cliente</option>
     </select>
     <br><label id="txtAlertT" class="txt-alert-hidden">Seleccione el tipo de TipoUsuario!</label>
     <input class="ctr" type="text" name="correo" id="txtCorreo" placeholder="Ingrese su correo">
     <label id="txtAlertC" class="txt-alert-hidden">Por favor, Ingrese eL Correo!</label>
     <input class="ctr" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
     <label id="txtAlertP" class="txt-alert-hidden">Por favor, Ingrese la Contraseña!</label>
-    <input id="term" class="check" type="checkbox"><a clashref="#">Terminos y Condiciones</a>
-    <label id="txtAlertTYC" class="txt-alert-hidden">Acepta los terminos y condiciones!</label>
+
+    <br>
+    <label for="" class="switch">
+      <input type="checkbox" class="input">
+      <div id="toogle" class="rail">
+      </div>
+    </label>
+   
+    
+    <br><label class="termi" for=""><a class="tyc" href="#">Terminos y Condiciones</a><br></label>
     <input id="btnRegistrar" class="button" type="submit" value="Registrar">
     <p><a href="logindanna.html">¿Ya esta Registrado?</a></p>
   </section>
