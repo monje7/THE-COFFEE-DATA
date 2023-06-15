@@ -15,7 +15,7 @@
     color: white;
     font-size: 1em;
     background-color: brown;
-    box-shadow: 16px 7px 30px grey;
+    box-shadow: 0px 15px 25px rgb(66, 63, 63);
 }
 .ctr{
     width: 100%;
@@ -31,6 +31,7 @@
 .form-reg h4{
     font-size: 1.4em;
     margin-bottom: 30px;
+    text-align: center;
 }
 p{
     color:white;
@@ -49,7 +50,7 @@ a{
 }
 .button{
     width: 80%;
-    background-color:white ;
+    background-color:#fdddca ;
     padding: 12px;
     color: black;
     margin: 16px 0;
@@ -82,21 +83,21 @@ a{
 .box-alert{
     height: 290px;
     width: 390px;
-    background-color: rgb(46, 105, 27);
+    background-color: brown;
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0px 20px 34px rgb(8, 85, 8);
+    box-shadow: 17px 12px 34px grey;
     align-items: center;
     flex-direction: column;
     position: relative;
 }
 .buttton-alert{
     position: relative;
-    background-color:white ;
+    background-color:#fdddca ;
     padding: 12px;
     color: black;
     font-size: 1em;
@@ -137,7 +138,7 @@ a{
 .box-mistake{
     height: 290px;
     width: 390px;
-    background-color: rgb(46, 105, 27);
+    background-color:rosybrown;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -151,7 +152,7 @@ a{
 }
 .button-mistake{
     position: relative;
-    background-color:white ;
+    background-color:#fdddca ;
     padding: 12px;
     color: black;
     font-size: 1em;
@@ -195,4 +196,44 @@ a{
     font-weight: 500;
     position: relative;
     top: -20px;
+}
+select{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    height: 30px;
+}
+.switch{
+    background-color: rosybrown;
+    height: 20px;
+    width: 60px;
+    padding: 0 1.5em;
+    border-radius: 0.8em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.input{
+    display: none;
+}
+.switch .rail{
+    position: relative;
+    width: 30px;
+    height: 10px;
+    border-radius: 3em;
+    background-color: brown;
+    left: 0;
+    transition: all 2s;
+}
+.right{
+    position: relative;
+    width: 30px;
+    height: 15px;
+    border-radius: 3em;
+    background-color: brown;
+    left: 50;
+    transition: all 6s;
+
+}
+.termi{
+    text-align: center;
 }
