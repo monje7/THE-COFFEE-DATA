@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: arial,sans-serif;
 }
 body {
     display: flex;
@@ -42,6 +43,8 @@ body {
 }
 .box-alert {
     position: relative;
+    font-size: 0.9em;
+    bottom: 96px;
     width: 400px;
     height: 300px;
     background-color: whitesmoke;
@@ -54,10 +57,11 @@ body {
 }
 .fa-circle-xmark {
     position: relative;
-    font-size: 1.8em;
-    left: 430px;
-    bottom: 155px;
+    font-size: 2em;
+    left: 407px;
+    bottom: 237px;
     color: red;
+    z-index:23 ;
 
 }
 .btn-aceptar {
@@ -78,7 +82,7 @@ body {
 }
 .formulario {
     margin-top: 60px;
-    height: 625px;
+    height: 715px;
     width: 420px;
     background-color: rgb(36, 48, 60);
     color: white;
@@ -102,7 +106,7 @@ input {
 }
 .txt-alert{
     font-size: 1.3em;
-    color: red;
+    color: white;
     font-weight: 400;
 }
 .txt-alert-hidden{

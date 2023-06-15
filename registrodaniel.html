@@ -29,21 +29,24 @@
         <div class="contenido">
             <h1>Formulario registro</h1>
             <!-- <label>Ingrese su nombre</label> -->
-            <input ckl type="text" id="nombreUsuario" placeholder="Ingrese su nombre"><br>
+            <input  type="text" id="nombreUsuario" placeholder="Ingrese su nombre"><br>
             <label id="txtAlert" class="txt-alert txt-alert-hidden">Ingrese  su nombre</label>
             <input type="text" id="apellidos" placeholder="Ingrese sus apellidos">
-            <label id="txtAlert" class="txt-alert txt-alert-hidden">Ingrese sus apellidos</label>
+            <label id="txtAlert2" class="txt-alert txt-alert-hidden">Ingrese sus apellidos</label>
             <!-- <label>Tipo de docuemnto</label> -->
-            <select>
-                <option value="">Tipo de documento</option>
-                <option value="">Tarjeta de identidad</option>
-                <option value="">Cedula</option>
-                <option value="">Cedula extranjera </option>
+            <select id="option">
+                <option value="0">Tipo de documento</option>
+                <option value="1">Tarjeta de identidad</option>
+                <option value="2">Cedula</option>
+                <option value="3">Cedula extranjera </option>
             </select>
+            <label id="txtAlert5" class="txt-alert txt-alert-hidden">Ingrese su </label>
             <!-- <label>Numero de documento</label> -->
-            <input type="text" placeholder="Ingrese su numero de docuemnto">
+            <input id="cedula" type="text" placeholder="Ingrese su numero de docuemnto">
+            <label id="txtAlert3" class="txt-alert txt-alert-hidden">Ingrese su numero de documento</label>
             <!-- <label>Ingrese su numero de documento</label> -->
-            <input type="tel" placeholder="Ingrese su numero telefonico">
+            <input id="telefono" type="tel" placeholder="Ingrese su numero telefonico">
+            <label id="txtAlert4" class="txt-alert txt-alert-hidden">Ingrese su numero de telefono</label>
             <div class="cont-send">
 
                 <input class="send" type="submit" id="btnEnviar" value="Enviar">
@@ -51,6 +54,6 @@
             </div>
         </div>
     </div>
-    <script src="js/resgistrodaniel.js"></script>
 </body>
+<script src="js/resgistrodaniel.js"></script>
 </html>
