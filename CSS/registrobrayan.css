@@ -1,12 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
     font-family: sans-serif;
 }
 
 body{
-    display: flex;
+    margin-top: 200px;
+    display:flex;
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -17,9 +18,9 @@ body{
 
 .container{
     width: 100%;
-    max-width: 750px;
+    max-width: 835px;
     background: rgba(0, 0, 0, 0.3);
-    padding: 90px;
+    padding: 30px;
     border-radius: 10px;   
 }
 
@@ -35,9 +36,9 @@ body{
 
 .main-user-info{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .user-input-box:nth-child(2n){
@@ -47,45 +48,28 @@ body{
 .user-input-box{
     display: flex;
     flex-wrap: wrap;
-    width: 45%;
-    padding-bottom: 20px;
+    width: 30%;
+    height: 100%;
+    padding-bottom: 30px;
 }
 
 .user-input-box label{
-    width: 95%;
+    width: 100%;
     color: white;
     font-size: 20px;
     font-weight: 400;
     margin: 5px 0;
+    display: flex;
 }
-
-.epa{
-    margin-left: 235px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: green;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.ipa{
-    margin-left: -350px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: blue;
-    padding: 15px;
-    border-radius: 10px;
-}
-
 .user-input-box input{
     height: 40px;
-    width: 95%;
+    width: 305%;
     border-radius: 7px;
     outline: none;
     border: 1px solid grey;
     padding: 0 10px;
+    display: flex;
+
 }
 
 .gender-title{
@@ -109,147 +93,40 @@ body{
 .form-submit-btn input{
     cursor: pointer;
 }
-
-.form-submit-btn{
-    margin-top: 40px;
+.login_form #nombre_error,
+.login_form #apellidos_error,
+.login_form #email_error,
+.login_form #documento_error,
+.login_form #telefono_error,
+.login_form #contraseña_error,
+.login_form #produccion_error,
+.login_form #opciones_error,
+.login_form #usuario_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
 }
-
-.form-submit-btn input{
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 20px;
-    padding: 10px;
-    border:none;
-    border-radius: 3px;
-    color: rgb(209, 209, 209);
-    background: rgba(63, 114, 76, 0.7);
+.login_form button{
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #1A237E;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
 }
-
-.form-submit-btn input:hover{
-    background: rgba(56, 204, 93, 0.7);
-    color: rgb(255, 255, 255);
-}
-
-.modal-alert {
-    position: fixed;
-    background-color: rgba(0, 0, 1, 0.499);
-    width:100% ;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.modal-alert-2{
-    position: fixed;
-    background-color: rgba(0, 0, 1, 0.499);
-    width:100% ;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.alert-hidden2{
-    visibility: hidden;
-}
-.alert-hidden {
-    visibility: hidden;
-}
-.box-alert {
-    position: relative;
-    width: 400px;
-    height: 300px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-}
-.mensaje{
-    position: absolute;
-    top: 10%;
-    left: 3%;
-    width: 100%;
-}
-.mensajeexi{
-    position: absolute;
-    top: 10%;
-    left: 21%;
-    width: 100%;
-}
-.btn-aceptarext{
-    position: absolute;
-    text-align: center;
-    font-weight: 800;
-    top: 235px;
-    left: 150px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: green;
-    border: none;
-    color: black;
-    font: 1.2em;
-    cursor: pointer;
-}
-.fa-circle-xmark {
-    position: relative;
-    font-size: 1.8em;
-    left: 430px;
-    bottom: 155px;
-    color: red;  
-}
-.btn-aceptar {
-    position: absolute;
-    text-align: center;
-    font-weight: 800;
-    top: 235px;
-    left: 150px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: red;
-    border: none;
-    color: black;
-    font: 1.2em;
-    cursor: pointer;
-}
-.check{
-    width: 120px;
-    height: 150px;
-    margin-left: 140px;
-    margin-top: 89px;
-}
-.notcheck{
-    width: 120px;
-    height: 150px;
-    margin-left: 140px;
-    margin-top: 89px;
-}
-
-@media(max-width: 600px){
-    .container{
-        min-width: 280px;
-    }
-
-    .user-input-box{
-        margin-bottom: 12px;
-        width: 100%;
-    }
-
-    .user-input-box:nth-child(2n){
-        justify-content: space-between;
-    }
-
-    .gender-category{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .main-user-info{
-        max-height: 380px;
-        overflow: auto;
-    }
-
-    .main-user-info::-webkit-scrollbar{
-        width: 0;
-    }
+.login_form button:hover{
+	background: #151c6a;
 }

@@ -8,115 +8,88 @@
     <link rel="stylesheet" href="CSS/registrobrayan.css" />
   </head>
   <body>
-    <div class="modal-alert alert-hidden" id="modalAlert">
-      <i class="fa-solid fa-circle-xmark" id="closed"></i>
-      <div class="box-alert"> 
-          <h2 class="mensajeexi">¡Registro con exito!</h2>
-          <div class="check"><img src="img/check.png" width="120"></div>
-          <input type="button" class="btn-aceptarext" id="btnAceptar" value="Aceptar">
-      </div>
-  </div>
-  <div class="modal-alert-2 alert-hidden2" id="modalAlert2">
-      <i class="fa-solid fa-circle-xmark" id="closed2"></i>
-      <div class="box-alert"> 
-          <h2 class="mensaje">Debe ingresar los campos vacios</h2>
-          <div class="notcheck"><img src="img/notcheck.png" width="120"></div>
-          <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
-      </div>
-  </div>
+  <form class="login_form" action="iniciosesionbrayan.html" method="post" name="form" onsubmit="return validated()">
 <div class="container">
 <h1 class="form-title">Registro</h1>
-<form action="#">
-<div class="main-user-info">
 <div class="user-input-box">
 
-  <label for="nombre">Nombre</label>
-    <input type="text"
-            id="nombre"
-            name="nombre" 
-            placeholder="Inserte Nombre" required/>
 
-</div>
-<div class="user-input-box">
-<label for="fullName">Apellidos</label>
-<input type="text"
-        id="apelli"
-        name="apelli"
-        placeholder="Inserte Apellidos" required/>
 
-</div>
-<div class="user-input-box">
-  <label for="email">Correo</label>
-    <input type="email"
-            id="email"
-            name="email"
-            placeholder="Inserte Correo" required/>
+<label for="nombres">Nombres</label>
+<input autocomplete="off" type="text" name="Nombre" placeholder="Inserte Nombres"/>
+<div id="nombre_error">Por favor complete sus Nombres</div>
 
-</div>
-<div class="user-input-box">
-  <label for="phoneNumber">N° Documento</label>
-    <input type="number"
-           id="document"
-           name="document"
-           placeholder="Inserte N° Documento"/>
 
-</div>
-<div class="user-input-box">
-  <label for="phoneNumber">Telefono</label>
-    <input type="tel"
-           id="phoneNumber"
-           name="phoneNumber"
-           placeholder="Inserte Telefono"/>
 
-</div>
-<div class="user-input-box">
-  <label for="password">Contraseña</label>
-    <input type="password"
-            id="password"
-            name="password"
-            placeholder="Inserte Contraseña"/>
+<label for="Apellidos">Apellidos</label>
+<input autocomplete="off" type="text" name="Apellidos" placeholder="Inserte Apellidos"/>
+<div id="apellidos_error">Por favor complete sus Apellidos</div>
 
-</div>
-<div class="user-input-box">
-  <label for="produccion">Lugar de produccion</label>
-    <input type="text"
-            id="produccion"
-            name="produccion"
-            placeholder="Inserte Contraseña"/>
 
-</div>
-<div class="user-input-box">
-<form>
-  <label for="opciones">Tipos de Cafe</label>
-  <select class="tiposc" id="opciones" name="opciones" required>
-    <option value="">ㅤㅤㅤSelecciona una opciónㅤㅤㅤ</option>
-    <option value="opcion1">Bourbon Rosado</option>
-    <option value="opcion2">Typica</option>
-    <option value="opcion3">Geisha</option>
-    <option value="opcion4">Comun</option>
-    <option value="opcion4">Caturro</option>
-  </select>
-</form>
-</div>
 
-<div class="gender-details-box">
-  <span class="gender-title">Tipo de Usuario</span>
-<div id="tipo" class="gender-category">
-<input type="radio" name="gender" id="">
-<label for="male">Cafetero</label>
-<input type="radio" name="gender" id="">
-<label for="female">Aprendiz</label>
-<input type="radio" name="gender" id="">
-<label for="other">Instructor</label>
-</div>
-</div>
-</div>
-<div class="form-submit-btn">
-      <a type="button" id="enviar" class="epa" href="#"> Registrarse</a>
-      <a type="button" id="asd" class="ipa" href="iniciosesionbrayan.html">Volver</a>
+<label for="Email">Correo</label>
+<input autocomplete="off" type="text" name="email" placeholder="Inserte Email"/>
+<div id="email_error">Por favor complete su email</div>
+
+
+
+  <label for="Documento">Documento</label>
+  <input autocomplete="off" type="text" name="documento" placeholder="Inserte Documento"/>
+  <div id="documento_error">Por favor complete su Documento</div>
+
+
+
+    <label for="Telefono">Telefono</label>
+    <input autocomplete="off" type="text" name="telefono" placeholder="Inserte Telefono"/>
+    <div id="telefono_error">Por favor complete su Telefono</div>
+    
+
+
+      <label for="Contraseña">Contraseña</label>
+      <input autocomplete="off" type="text" name="contraseña" placeholder="Inserte Contraseña"/>
+      <div id="contraseña_error">Por favor complete su Contraseña</div>
+      
+
+      
+        <label for="Produccion">Lugar de Produccion</label>
+        <input autocomplete="off" type="text" name="produccion" placeholder="Inserte Lugar de Produccion"/>
+        <div id="produccion_error">Por favor complete el Lugar de Produccion</div>
+        
+
+        
+          <form>
+            <label for="opciones">Tipos de Cafe</label>
+            <select class="tiposc" name="opciones">
+              <option value="">ㅤㅤㅤSelecciona una opciónㅤㅤㅤ</option>
+              <option value="opcion1">Bourbon Rosado</option>
+              <option value="opcion2">Typica</option>
+              <option value="opcion3">Geisha</option>
+              <option value="opcion4">Comun</option>
+              <option value="opcion4">Caturro</option>
+            </select>
+            <div id="opciones_error">Por favor complete el Lugar de Produccion</div>
+          </form>
+        
+          
+        </div>
+          <div class="gender-details-box">
+            <label for="Usuario" class="gender-title">Tipo de Usuario</label>
+          <div name="usuario" class="gender-category">
+          <input type="radio" name="gender" id="">
+          <label for="male">Cafetero</label>
+          <input type="radio" name="gender" id="">
+          <label for="female">Aprendiz</label>
+          <input type="radio" name="gender" id="">
+          <label for="other">Instructor</label>
+          </div>
+          <div id="usuario_error">Por favor complete el Lugar de Produccion</div>
+          </div>
+
+      <button type="submit" class="epa" > Registrarse</button>
+
+
 </div>
 </form>
-</div>
 <script src="js/registrobrayan.js"></script>
 </body>
 </html>
