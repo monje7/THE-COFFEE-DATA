@@ -14,7 +14,7 @@
     border-radius: 2px;
     color: white;
     font-size: 1em;
-    background-color: brown;
+    background-color: darkgray;
     box-shadow: 0px 15px 25px rgb(66, 63, 63);
 }
 .ctr{
@@ -50,7 +50,7 @@ a{
 }
 .button{
     width: 80%;
-    background-color:#fdddca ;
+    background-color:#007E33;
     padding: 12px;
     color: black;
     margin: 16px 0;
@@ -97,7 +97,7 @@ a{
 }
 .buttton-alert{
     position: relative;
-    background-color:#fdddca ;
+    background-color:whitesmoke ;
     padding: 12px;
     color: black;
     font-size: 1em;
@@ -138,7 +138,7 @@ a{
 .box-mistake{
     height: 290px;
     width: 390px;
-    background-color:rosybrown;
+    background-color:green;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -152,7 +152,7 @@ a{
 }
 .button-mistake{
     position: relative;
-    background-color:#fdddca ;
+    background-color: gray;
     padding: 12px;
     color: black;
     font-size: 1em;
@@ -202,38 +202,42 @@ select{
     font-family: 'Poppins', sans-serif;
     height: 30px;
 }
-.switch{
-    background-color: rosybrown;
+.container-T{
+    background-color: whitesmoke;
     height: 20px;
     width: 60px;
     padding: 0 1.5em;
     border-radius: 0.8em;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    position: relative;
 }
 .input{
     display: none;
 }
-.switch .rail{
-    position: relative;
-    width: 30px;
-    height: 10px;
+.container-T .rail{
+    position: absolute;
+     height: 18px;
+     width: 18px;
     border-radius: 3em;
-    background-color: brown;
-    left: 0;
-    transition: all 2s;
+    background-color: green;
+    left: 0%;
+    transition: all 1s;
+    margin-left: 2px;
 }
 .right{
-    position: relative;
-    width: 30px;
-    height: 15px;
+    position: absolute;
+    height: 18px;
+    width: 18px;
     border-radius: 3em;
-    background-color: brown;
-    left: 50;
-    transition: all 6s;
+    background-color: rgb(44, 151, 44);
+    left: calc(100% - 20px);
+    transition: all 1s;
 
 }
-.termi{
-    text-align: center;
+.terminos{
+    display: flex;
+    gap: 10px
 }
