@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 40px; 
+}
+.temr-condition{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    padding: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    z-index: 20;
+}
+.icon{
+    margin-top: 15px;
+    color:#0099CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+.title-term{
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.explic{
+    color:gray;
+    font-family: 'Poppins', sans-serif;
+}
+.button{
+    width: 10%;
+    position: fixed;
+    background-color:#0099CC;
+    padding: 12px;
+    margin: 50px 310px;
+    font-size: 1.2em;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius:15px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Asul', sans-serif;
+}
+h3{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;
+
+}
+
