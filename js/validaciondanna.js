@@ -16,12 +16,20 @@ let txtAlertT = document.getElementById("txtAlertT");
 let txtAlertC = document.getElementById("txtAlertC");
 let txtAlertP = document.getElementById("txtAlertP");
 let txtAlertTYC = document.getElementById("txtAlertTYC");
+let containerT = document.getElementById("switchT");
 let toogle = document.getElementById("toogle");
 
 
-toogle.addEventListener("click",function(){
-    toogle.classList.remove("rail");
-    toogle.classList.add("right");
+
+switchT.addEventListener("click",function(){
+    if(toogle.classList.contains("right")){
+        toogle.classList.remove("right");
+        toogle.classList.add("rail");
+    }else{
+        toogle.classList.add("right");
+        toogle.classList.remove("rail");
+    }
+   
 });
 
 btnRegistrar.addEventListener("click",function(){
