@@ -94,34 +94,7 @@ btnRegistrar.addEventListener("click",function(){
         hiddenAlert.style.visibility = "visible";
         hiddenAlert.style.opacity = "1";
     }
-     if ((txtNombre.value.length != 0)&&(txtApellidos.value.length!=0)&&(txtCorreo.value.length != 0)&&(txtTipoUsuario.value.length != 0)&&(txtTipoUsuario.value.length != 0)) {
 
-       txtAlert.classList.add("txt-alert-visible");
-       txtAlert.classList.remove("txt-alert-hidden");
-       btnAceptar.addEventListener("click",function(){
-       forms.submit()
-    })
- }else if ((nombreUsuario.value.length !== 0)&&(correo.value.length===0)&&(contaseña.value.length !== 0)) {
-        hiddenAlert.style.visibility = "hidden";
-        hiddenAlert.style.opacity = "0.0";
-        btnAceptar.addEventListener("click",function(){
-        forms.submit()
-   })
-}
-else {
-    btnRegistrar.addEventListener("click",function(){
-        hiddenBreack.classList.add("div-breack");
-        hiddenBreack.classList.add("div-breack");
-        hiddenBreack.style.visibility = "visible";
-        hiddenBreack.style.opacity = "1";
-        });
-    btnRegistrar.addEventListener("click",function(){
-        hiddenBreack.classList.add("div-breack")
-        });
-    btnRegistrar.addEventListener("click",function(){
-        hiddenBreack.classList.add("div-breack")
-        });
-}
 });
 btnAceptar.addEventListener("click", function () {
 hiddenAlert.style.visibility = "hidden";
